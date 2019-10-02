@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="slidemenu" class="slidemenu">
+          <div class="slidemenu-body">
+              <div class="search">
+                <script>
+                (function() {
+                  var cx = 'partner-pub-6287619350558156:2514897697';
+                  var gcse = document.createElement('script');
+                  gcse.type = 'text/javascript';
+                  gcse.async = true;
+                  gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                      '//www.google.com/cse/cse.js?cx=' + cx;
+                  var s = document.getElementsByTagName('script')[0];
+                  s.parentNode.insertBefore(gcse, s);
+                })();
+              </script>
+                <gcse:searchbox-only></gcse:searchbox-only>
+              </div>
+              <!-- /.search -->
+              <div class="slidemenu-content">
+              <div class="slidemenu-heading">
+                カテゴリ
+              </div>
+              <ul id="slidemenuContentCategory" class="slidemenu-inner">
+                <li class="slidemenu-item"><a href="">コラム</a></li>
+                <li class="slidemenu-item"><a href="">ニュース</a></li>
+                <li class="slidemenu-item"><a href="">クイズ</a></li>
+                <li class="slidemenu-item"><a href="">ご近所トラブル</a></li>
+                <li class="slidemenu-item"><a href="">Jタウン研究所</a></li>
+                <li class="slidemenu-item"><a href="">お出かけ</a></li>
+                <li class="slidemenu-item"><a href="">おかいもの</a></li>
+                <li class="slidemenu-item"><a href="">くらし</a></li>
+              </ul>
+              <div class="slidemenu-heading">
+                人気コンテンツ
+              </div>
+              <ul id="slidemenuContentPopular" class="slidemenu-inner">
+                <li class="slidemenu-item"><a href="">コンテンツ</a></li>
+                <li class="slidemenu-item"><a href="">コンテンツ</a></li>
+                <li class="slidemenu-item"><a href="">コンテンツ</a></li>
+                <li class="slidemenu-item"><a href="">コンテンツ</a></li>
+                <li class="slidemenu-item"><a href="">コンテンツ</a></li>
+                <li class="slidemenu-item"><a href="">コンテンツ</a></li>
+                <li class="slidemenu-item"><a href="">コンテンツ</a></li>
+                <li class="slidemenu-item"><a href="">コンテンツ</a></li>
+                <li class="slidemenu-item"><a href="">コンテンツ</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="slidemenu-bg"></div>
+    </div>
+    
+    <div class="wrapper">
+      <div id="button" data-target="slidemenu">
+        ドロワー
+      </div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum error ullam voluptates possimus exercitationem harum quos necessitatibus similique, consequuntur eveniet id quo repudiandae aut voluptatum delectus suscipit cum vitae ut!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum error ullam voluptates possimus exercitationem harum quos necessitatibus similique, consequuntur eveniet id quo repudiandae aut voluptatum delectus suscipit cum vitae ut!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum error ullam voluptates possimus exercitationem harum quos necessitatibus similique, consequuntur eveniet id quo repudiandae aut voluptatum delectus suscipit cum vitae ut!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum error ullam voluptates possimus exercitationem harum quos necessitatibus similique, consequuntur eveniet id quo repudiandae aut voluptatum delectus suscipit cum vitae ut!
+      </p>
+    </div>
+    <style>
+  .is-clipped {
+    overflow: hidden;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  ul,li {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    list-style: none;
+  }
+  .slidemenu {
+    top: 0;
+    width: 240px;
+    position: fixed;
+    background-color: #333;
+    z-index: 1000 !important;
+    transform: translateX(-240px);
+    transition: .2s;
+  }
+  .is-active.slidemenu {
+    transform: translateX(0)
+  }
+  .slidemenu .search {
+    padding: 5px 10px;
+    margin-bottom: 20px;
+  }
+  .slidemenu-body {
+    width: 240px;
+    height: 100vh !important;
+    -webkit-overflow-scrolling: auto;
+    overflow: scroll !important;
+    -webkit-overflow-scrolling: touch;
+  }
+  .slidemenu-inner {
+    background: #444;
+    margin-bottom: 20px;
+  }
+  #slidemenuContentCategory {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #slidemenuContentPopular {
+    margin-bottom: 100px;
+  }
+  .slidemenu-heading {
+    font-size: 12px;
+    line-height: 14px;
+    color: #ccc;
+    padding: 0 10px 14px;
+  }
+  .slidemenu-item {
+    list-style: none;
+  }
+  .slidemenu-item a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 13px;
+    line-height: 1;
+    text-decoration: none;
+    padding: 12px 10px;
+    border-bottom: 1px solid #828282;
+  }
+  .slidemenu-item a::after {
+    content: '>';
+    font-size: 10px;
+    color: #828282;
+  }
+  #slidemenuContentCategory > .slidemenu-item {
+    flex: 0 0 50%;
+  }
+  #slidemenuContentCategory > .slidemenu-item:nth-child(2n+1) a {
+    border-right: 1px solid #828282;
+  }
+  #slidemenuContentCategory > .slidemenu-item:nth-child(-n+2) a {
+    border-top: 1px solid #828282;
+  }
+  #slidemenuContentPopular > .slidemenu-item:nth-child(1) a {
+    border-top: 1px solid #828282;
+  }
+  .slidemenu-bg {
+    background-color: rgba(0,0,0,0);
+    position: fixed;
+    width: 100vh;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -2;
+    transition: 0.2s;
+    pointer-events: none;
+  }
+  .is-active .slidemenu-bg {
+    background-color: rgba(0,0,0,0.4);
+    pointer-events: auto;
+  }
+  #button {
+    display: inline-block;
+    padding: 10px;
+    font-size: 14px;
+    background: #f5f5f5;
+  }
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var rootEl = document.documentElement;
+      var $drawer = getAll(".slidemenu");
+      var $drawerTrigger = getAll("#button");
+      var $drawerCloses = getAll(".slidemenu-bg");
+    
+      if ($drawerTrigger.length > 0) {
+        $drawerTrigger.forEach(function($el) {
+          $el.addEventListener("click", function() {
+            console.log('click')
+            var target = $el.dataset.target;
+            openDrawer(target);
+            console.log(target)
+          });
+        });
+      }
+    
+      if ($drawerCloses.length > 0) {
+        $drawerCloses.forEach(function($el) {
+          $el.addEventListener("click", function() {
+            closeDrawer();
+          });
+        });
+      }
+    
+      function openDrawer(target) {
+        console.log(target,'openDrawer')
+        var $target = document.getElementById(target);
+        console.log($target)
+        rootEl.classList.add("is-clipped");
+        $target.classList.add("is-active");
+      }
+    
+      function closeDrawer() {
+        rootEl.classList.remove("is-clipped");
+        $drawer.forEach(function($el) {
+          $el.classList.remove("is-active");
+        });
+      }    
+      function getAll(selector) {
+        return Array.prototype.slice.call(document.querySelectorAll(selector), 0);
+      }
+    });
+</script>
+  </body>
+</html>
